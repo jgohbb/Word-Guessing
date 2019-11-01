@@ -7,32 +7,54 @@
     <title>Guess your Way Around the World</title>
     <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Cinzel|Noto+Sans+KR|Oxygen|Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <div class="container-main">
+    <div class="container-main text-center">
         <div id="title">
              <h1>Travel Round the World</h1>
         </div>
     
         <div id="explain">
-            <h2>Are you ready to see the world? Make a word guess and find out where you might end up. Press any key to start the game.</h2>
+            <h2>Are you ready to expand your horizon and see the world?<br>Make a <span style="color:red;font-weight:bold">word guess</span> and find out where you might end up. Press any key to start the game.</h2>
         </div>
    
 
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h3>How you stack up so far</h3>
-                    <p>Wins: <span id=user-win></span></p>
-                    <p>Losses: <span id=user-lose></span></p>
+                <div class="col-md-6 text-right">
+                    <h3>Your guess word is:</h3>
                 </div>
+                <div class="col-md-6 text-left">
+                    <h3>blank blank blank</h3>
+                </div>
+               
             </div>
 
-            <dic class
-        </div>
+            <div class="jumbotron margin sizing bgimage">
+                <div class="row">
+                  <div class="col-lg-12">
+                    level 1
+                    <div class="row">
+                      <div id="score" class="col-4 col-lg-3">
+                        <p id="stats">How do you stack up so far:<span id="stats"></span><p>
+                        <p>Wins: <span id="user-win"></span></p>
+                        <p>Losses: <span id="user-lose"></span></p>
+                      </div>
+                      <div class="col-4 col-lg-6">
+
+                      </div>
+                      <div class="col-4 col-lg-3">
+                        <p>Number of Guesses Remaining: <span id="remaining"></span></p>
+                        <p>Letters Already Guessed: <span id="wrong"></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
         <div class="row">
 
 
