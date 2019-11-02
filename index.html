@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Guess your Way Around the World</title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Cinzel|Noto+Sans+KR|Oxygen|Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Cinzel|Noto+Sans+KR|Oxygen|Special+Elite&display=swap|Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -18,7 +18,7 @@
         </div>
     
         <div id="explain">
-            <h2>Are you ready to expand your horizon and see the world?<br>Make a <span style="color:red;font-weight:bold">word guess</span> and find out which city you might end up. Press any key to start the game.</h2>
+            <h2>Are you ready to expand your horizon and see the world?<br>Make a <span style="font-weight:bold">word guess</span> and find out which city you might end up. Press any key to start the game.</h2>
         </div>
    
 
@@ -33,11 +33,9 @@
                
             </div>
 
-            <div class="jumbotron margin sizing bgimage">
-                <div class="row">
+            <div id="target-image" class="jumbotron margin sizing bgimage">
+                <div class="row" id="all-images">
                   <div class="col-lg-12">
-                    <label><span id="labels"></span></label>
-                    
                     <div class="row">
                       <div id="score" class="col-4 col-lg-3">
                         <p>How do you stack up so far:<span id="stats"></span><p>
@@ -56,7 +54,7 @@
                 </div>
               </div>
         
-        <div class="row">
+            
 
 
         </div>
