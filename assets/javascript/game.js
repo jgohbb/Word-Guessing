@@ -7,7 +7,7 @@ var blanksSuccess = [];
 var wrongLetters = [];
 var wins = 0;
 var losses = 0;
-var livesLeft = 12;
+var livesLeft = 0;
 var cityImages = {
     "amsterdam": "assets/images/amsterdam.jpg",
     "bangkok": "assets/images/bangkok.jpg",
@@ -102,10 +102,10 @@ function checkLetters(letter) {
 function gameComplete() {
         document.getElementById("remaining").innerHTML = livesLeft;
         document.getElementById("word-guess").innerHTML = blanksSuccess.join (" ");
-        document.getElementById("letters-guessed").innerHTML = wrongLetters.join (" ");
+        document.getElementById("letters-guessed").innerHTML = wrongLetters.join (",  ");
     if (lettersOfWord.toString() == blanksSuccess.toString()) {
         wins++;
-        document.getElementById("add-comment").innerHTML = "You got it! Now try again for another city:";
+        document.getElementById("add-comment").innerHTML = "You are in " + [randomSelection] + "!" + " " + "Let's check another city :";
         document.getElementById("user-win").innerHTML = wins;
         //document.getElementById("labels").innerHTML = labels;
         //document.getElementById("target-image").innerHTML = '';
